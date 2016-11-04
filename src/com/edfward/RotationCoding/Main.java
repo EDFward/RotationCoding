@@ -16,7 +16,7 @@ public class Main {
     boolean shouldPrint = args.length > 0 && args[0].equals("print");
     String randomString = RandomStringUtils.randomAlphanumeric(100000);
 
-    RotationCoding coding = new RotationCodingOriginal();
+    RotationCoding coding = new RotationCodingV3();
 
     // Run multiple times.
     for (int i = 0; i < 5000; i++) {
@@ -229,6 +229,54 @@ class RotationCodingV2 implements RotationCoding {
         char ch = rotatedCounterClockwise[i][j];
         if (ch == 11) {
           break;
+        }
+        resBuilder.append(ch);
+      }
+    }
+    return resBuilder.toString();
+  }
+}
+
+class RotationCodingV3 implements RotationCoding {
+
+  public String code(String s) {
+    int size = s.length();
+    if (size == 0) {
+      return "";
+    }
+
+    int n = ((int) Math.sqrt(size - 1)) + 1;
+
+    StringBuilder res = new StringBuilder();
+    for (int row = 0; row < n; row++) {
+      for (int col = 0; col < n; col++) {
+        int i = (n - 1 - col) * n + row;
+        res.append(i >= size ? 11 : s.charAt(i));
+        if (col == n - 1 && row != n - 1) {
+          res.append('\n');
+        }
+      }
+    }
+    return res.toString();
+  }
+
+  public String decode(String s) {
+    s = s.replace("\n", "");
+    int size = s.length();
+    if (size == 0) {
+      return "";
+    }
+
+    int n = (int) Math.sqrt(size);
+
+    StringBuilder resBuilder = new StringBuilder();
+    OUTER:
+    for (int row = 0; row < n; row++) {
+      for (int col = 0; col < n; col++) {
+        int i = col * n + (n - 1 - row);
+        char ch = s.charAt(i);
+        if (ch == 11) {
+          break OUTER;
         }
         resBuilder.append(ch);
       }
