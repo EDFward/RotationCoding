@@ -1,35 +1,14 @@
 package com.edfward.RotationCoding;
 
-import org.apache.commons.lang3.RandomStringUtils;
-
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-interface RotationCoding {
+public interface RotationCoding {
   String code(String s);
 
   String decode(String s);
 }
 
-public class Main {
-  public static void main(String[] args) {
-    boolean shouldPrint = args.length > 0 && args[0].equals("print");
-    String randomString = RandomStringUtils.randomAlphanumeric(100000);
-
-    RotationCoding coding = new RotationCodingV3();
-
-    // Run multiple times.
-    for (int i = 0; i < 5000; i++) {
-      String encoded = coding.code(randomString);
-      String decoded = coding.decode(encoded);
-
-      if (shouldPrint) {
-        boolean same = randomString.equals(decoded);
-        System.out.println("Source and decoded are the same? " + (same ? "Yes." : "No"));
-      }
-    }
-  }
-}
 
 class RotationCodingOriginal implements RotationCoding {
 

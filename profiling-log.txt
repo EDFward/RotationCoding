@@ -1,0 +1,356 @@
+∙ java -jar target/benchmarks.jar RotationCodingBenchmark -wi 10 -i 10 -f 3
+# JMH 1.16 (released 15 days ago)
+# VM version: JDK 1.8.0_25, VM 25.25-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.edfward.RotationCoding.RotationCodingBenchmark.testRotationCodingOriginal
+
+# Run progress: 0.00% complete, ETA 00:04:00
+# Fork: 1 of 3
+# Warmup Iteration   1: 4162.049 us/op
+# Warmup Iteration   2: 3884.245 us/op
+# Warmup Iteration   3: 3382.290 us/op
+# Warmup Iteration   4: 3321.432 us/op
+# Warmup Iteration   5: 1927.788 us/op
+# Warmup Iteration   6: 1547.642 us/op
+# Warmup Iteration   7: 1536.828 us/op
+# Warmup Iteration   8: 1566.337 us/op
+# Warmup Iteration   9: 1521.487 us/op
+# Warmup Iteration  10: 1501.663 us/op
+Iteration   1: 1498.469 us/op
+Iteration   2: 1506.241 us/op
+Iteration   3: 1497.465 us/op
+Iteration   4: 1529.181 us/op
+Iteration   5: 1513.333 us/op
+Iteration   6: 1511.956 us/op
+Iteration   7: 1503.697 us/op
+Iteration   8: 1432.818 us/op
+Iteration   9: 1502.391 us/op
+Iteration  10: 1538.308 us/op
+
+# Run progress: 8.33% complete, ETA 00:03:44
+# Fork: 2 of 3
+# Warmup Iteration   1: 4082.013 us/op
+# Warmup Iteration   2: 3795.588 us/op
+# Warmup Iteration   3: 3277.392 us/op
+# Warmup Iteration   4: 3239.435 us/op
+# Warmup Iteration   5: 1764.368 us/op
+# Warmup Iteration   6: 1508.098 us/op
+# Warmup Iteration   7: 1529.585 us/op
+# Warmup Iteration   8: 1522.272 us/op
+# Warmup Iteration   9: 1514.445 us/op
+# Warmup Iteration  10: 1533.148 us/op
+Iteration   1: 1395.611 us/op
+Iteration   2: 1492.582 us/op
+Iteration   3: 1532.914 us/op
+Iteration   4: 1511.050 us/op
+Iteration   5: 1514.475 us/op
+Iteration   6: 1519.868 us/op
+Iteration   7: 1507.363 us/op
+Iteration   8: 1534.002 us/op
+Iteration   9: 1518.985 us/op
+Iteration  10: 1508.457 us/op
+
+# Run progress: 16.67% complete, ETA 00:03:23
+# Fork: 3 of 3
+# Warmup Iteration   1: 3945.812 us/op
+# Warmup Iteration   2: 3608.873 us/op
+# Warmup Iteration   3: 3311.084 us/op
+# Warmup Iteration   4: 3286.864 us/op
+# Warmup Iteration   5: 1824.441 us/op
+# Warmup Iteration   6: 1560.955 us/op
+# Warmup Iteration   7: 1520.414 us/op
+# Warmup Iteration   8: 1534.514 us/op
+# Warmup Iteration   9: 1532.971 us/op
+# Warmup Iteration  10: 1544.457 us/op
+Iteration   1: 1457.126 us/op
+Iteration   2: 1535.515 us/op
+Iteration   3: 1499.537 us/op
+Iteration   4: 1519.801 us/op
+Iteration   5: 1490.901 us/op
+Iteration   6: 1508.816 us/op
+Iteration   7: 1434.482 us/op
+Iteration   8: 1534.432 us/op
+Iteration   9: 1442.785 us/op
+Iteration  10: 1505.361 us/op
+
+
+Result "testRotationCodingOriginal":
+  1499.931 ±(99.9%) 22.896 us/op [Average]
+  (min, avg, max) = (1395.611, 1499.931, 1538.308), stdev = 34.269
+  CI (99.9%): [1477.035, 1522.826] (assumes normal distribution)
+
+
+# JMH 1.16 (released 15 days ago)
+# VM version: JDK 1.8.0_25, VM 25.25-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.edfward.RotationCoding.RotationCodingBenchmark.testRotationCodingV1
+
+# Run progress: 25.00% complete, ETA 00:03:03
+# Fork: 1 of 3
+# Warmup Iteration   1: 1875.295 us/op
+# Warmup Iteration   2: 1501.093 us/op
+# Warmup Iteration   3: 1334.792 us/op
+# Warmup Iteration   4: 1351.856 us/op
+# Warmup Iteration   5: 1332.577 us/op
+# Warmup Iteration   6: 1350.187 us/op
+# Warmup Iteration   7: 1317.671 us/op
+# Warmup Iteration   8: 1323.803 us/op
+# Warmup Iteration   9: 1369.515 us/op
+# Warmup Iteration  10: 1456.970 us/op
+Iteration   1: 1402.150 us/op
+Iteration   2: 1339.733 us/op
+Iteration   3: 1307.855 us/op
+Iteration   4: 1344.387 us/op
+Iteration   5: 1351.944 us/op
+Iteration   6: 1337.247 us/op
+Iteration   7: 1374.033 us/op
+Iteration   8: 1349.015 us/op
+Iteration   9: 1332.912 us/op
+Iteration  10: 1359.710 us/op
+
+# Run progress: 33.33% complete, ETA 00:02:43
+# Fork: 2 of 3
+# Warmup Iteration   1: 1860.771 us/op
+# Warmup Iteration   2: 1536.506 us/op
+# Warmup Iteration   3: 1364.824 us/op
+# Warmup Iteration   4: 1432.521 us/op
+# Warmup Iteration   5: 1355.675 us/op
+# Warmup Iteration   6: 1333.671 us/op
+# Warmup Iteration   7: 1351.617 us/op
+# Warmup Iteration   8: 1368.399 us/op
+# Warmup Iteration   9: 1324.331 us/op
+# Warmup Iteration  10: 1344.338 us/op
+Iteration   1: 1352.989 us/op
+Iteration   2: 1338.228 us/op
+Iteration   3: 1348.201 us/op
+Iteration   4: 1347.073 us/op
+Iteration   5: 1354.083 us/op
+Iteration   6: 1351.994 us/op
+Iteration   7: 1348.851 us/op
+Iteration   8: 1353.829 us/op
+Iteration   9: 1355.231 us/op
+Iteration  10: 1374.636 us/op
+
+# Run progress: 41.67% complete, ETA 00:02:22
+# Fork: 3 of 3
+# Warmup Iteration   1: 1886.694 us/op
+# Warmup Iteration   2: 1503.919 us/op
+# Warmup Iteration   3: 1327.668 us/op
+# Warmup Iteration   4: 1378.365 us/op
+# Warmup Iteration   5: 1352.367 us/op
+# Warmup Iteration   6: 1319.860 us/op
+# Warmup Iteration   7: 1340.701 us/op
+# Warmup Iteration   8: 1362.188 us/op
+# Warmup Iteration   9: 1361.892 us/op
+# Warmup Iteration  10: 1362.836 us/op
+Iteration   1: 1353.481 us/op
+Iteration   2: 1354.898 us/op
+Iteration   3: 1351.513 us/op
+Iteration   4: 1366.429 us/op
+Iteration   5: 1363.363 us/op
+Iteration   6: 1360.940 us/op
+Iteration   7: 1345.469 us/op
+Iteration   8: 1350.550 us/op
+Iteration   9: 1345.015 us/op
+Iteration  10: 1375.462 us/op
+
+
+Result "testRotationCodingV1":
+  1353.041 ±(99.9%) 10.828 us/op [Average]
+  (min, avg, max) = (1307.855, 1353.041, 1402.150), stdev = 16.207
+  CI (99.9%): [1342.213, 1363.869] (assumes normal distribution)
+
+
+# JMH 1.16 (released 15 days ago)
+# VM version: JDK 1.8.0_25, VM 25.25-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.edfward.RotationCoding.RotationCodingBenchmark.testRotationCodingV2
+
+# Run progress: 50.00% complete, ETA 00:02:02
+# Fork: 1 of 3
+# Warmup Iteration   1: 1919.865 us/op
+# Warmup Iteration   2: 1559.550 us/op
+# Warmup Iteration   3: 1520.059 us/op
+# Warmup Iteration   4: 1517.899 us/op
+# Warmup Iteration   5: 1533.246 us/op
+# Warmup Iteration   6: 1528.491 us/op
+# Warmup Iteration   7: 1528.447 us/op
+# Warmup Iteration   8: 1541.818 us/op
+# Warmup Iteration   9: 1570.594 us/op
+# Warmup Iteration  10: 1623.120 us/op
+Iteration   1: 1553.716 us/op
+Iteration   2: 1550.760 us/op
+Iteration   3: 1589.467 us/op
+Iteration   4: 1596.365 us/op
+Iteration   5: 1504.510 us/op
+Iteration   6: 1542.980 us/op
+Iteration   7: 1556.906 us/op
+Iteration   8: 1526.124 us/op
+Iteration   9: 1531.174 us/op
+Iteration  10: 1535.059 us/op
+
+# Run progress: 58.33% complete, ETA 00:01:42
+# Fork: 2 of 3
+# Warmup Iteration   1: 1890.457 us/op
+# Warmup Iteration   2: 1743.612 us/op
+# Warmup Iteration   3: 1486.814 us/op
+# Warmup Iteration   4: 1511.792 us/op
+# Warmup Iteration   5: 1456.115 us/op
+# Warmup Iteration   6: 1450.263 us/op
+# Warmup Iteration   7: 1525.271 us/op
+# Warmup Iteration   8: 1463.254 us/op
+# Warmup Iteration   9: 1521.092 us/op
+# Warmup Iteration  10: 1538.426 us/op
+Iteration   1: 1475.394 us/op
+Iteration   2: 1484.321 us/op
+Iteration   3: 1492.320 us/op
+Iteration   4: 1495.283 us/op
+Iteration   5: 1503.463 us/op
+Iteration   6: 1405.388 us/op
+Iteration   7: 1558.387 us/op
+Iteration   8: 1489.306 us/op
+Iteration   9: 1484.412 us/op
+Iteration  10: 1500.480 us/op
+
+# Run progress: 66.67% complete, ETA 00:01:21
+# Fork: 3 of 3
+# Warmup Iteration   1: 1900.882 us/op
+# Warmup Iteration   2: 1698.258 us/op
+# Warmup Iteration   3: 1504.066 us/op
+# Warmup Iteration   4: 1467.508 us/op
+# Warmup Iteration   5: 1460.150 us/op
+# Warmup Iteration   6: 1520.481 us/op
+# Warmup Iteration   7: 1494.333 us/op
+# Warmup Iteration   8: 1483.720 us/op
+# Warmup Iteration   9: 1495.512 us/op
+# Warmup Iteration  10: 1477.316 us/op
+Iteration   1: 1486.586 us/op
+Iteration   2: 1473.802 us/op
+Iteration   3: 1488.609 us/op
+Iteration   4: 1518.523 us/op
+Iteration   5: 1485.300 us/op
+Iteration   6: 1510.525 us/op
+Iteration   7: 1454.136 us/op
+Iteration   8: 1390.214 us/op
+Iteration   9: 1503.652 us/op
+Iteration  10: 1464.508 us/op
+
+
+Result "testRotationCodingV2":
+  1505.056 ±(99.9%) 30.575 us/op [Average]
+  (min, avg, max) = (1390.214, 1505.056, 1596.365), stdev = 45.763
+  CI (99.9%): [1474.481, 1535.630] (assumes normal distribution)
+
+
+# JMH 1.16 (released 15 days ago)
+# VM version: JDK 1.8.0_25, VM 25.25-b02
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.edfward.RotationCoding.RotationCodingBenchmark.testRotationCodingV3
+
+# Run progress: 75.00% complete, ETA 00:01:01
+# Fork: 1 of 3
+# Warmup Iteration   1: 1615.541 us/op
+# Warmup Iteration   2: 1386.240 us/op
+# Warmup Iteration   3: 1215.462 us/op
+# Warmup Iteration   4: 1218.152 us/op
+# Warmup Iteration   5: 1194.308 us/op
+# Warmup Iteration   6: 1204.990 us/op
+# Warmup Iteration   7: 1208.596 us/op
+# Warmup Iteration   8: 1199.739 us/op
+# Warmup Iteration   9: 1198.848 us/op
+# Warmup Iteration  10: 1211.086 us/op
+Iteration   1: 1233.342 us/op
+Iteration   2: 1157.588 us/op
+Iteration   3: 1195.091 us/op
+Iteration   4: 1223.800 us/op
+Iteration   5: 1230.788 us/op
+Iteration   6: 1231.462 us/op
+Iteration   7: 1223.648 us/op
+Iteration   8: 1173.525 us/op
+Iteration   9: 1193.415 us/op
+Iteration  10: 1220.723 us/op
+
+# Run progress: 83.33% complete, ETA 00:00:40
+# Fork: 2 of 3
+# Warmup Iteration   1: 1596.395 us/op
+# Warmup Iteration   2: 1361.414 us/op
+# Warmup Iteration   3: 1180.913 us/op
+# Warmup Iteration   4: 1241.940 us/op
+# Warmup Iteration   5: 1165.178 us/op
+# Warmup Iteration   6: 1182.820 us/op
+# Warmup Iteration   7: 1170.631 us/op
+# Warmup Iteration   8: 1195.908 us/op
+# Warmup Iteration   9: 1166.532 us/op
+# Warmup Iteration  10: 1175.738 us/op
+Iteration   1: 1181.343 us/op
+Iteration   2: 1177.004 us/op
+Iteration   3: 1178.992 us/op
+Iteration   4: 1183.210 us/op
+Iteration   5: 1189.374 us/op
+Iteration   6: 1162.853 us/op
+Iteration   7: 1198.067 us/op
+Iteration   8: 1170.762 us/op
+Iteration   9: 1176.678 us/op
+Iteration  10: 1181.556 us/op
+
+# Run progress: 91.67% complete, ETA 00:00:20
+# Fork: 3 of 3
+# Warmup Iteration   1: 1603.798 us/op
+# Warmup Iteration   2: 1420.334 us/op
+# Warmup Iteration   3: 1210.153 us/op
+# Warmup Iteration   4: 1258.974 us/op
+# Warmup Iteration   5: 1259.170 us/op
+# Warmup Iteration   6: 1248.787 us/op
+# Warmup Iteration   7: 1231.488 us/op
+# Warmup Iteration   8: 1222.651 us/op
+# Warmup Iteration   9: 1219.124 us/op
+# Warmup Iteration  10: 1218.714 us/op
+Iteration   1: 1215.868 us/op
+Iteration   2: 1233.380 us/op
+Iteration   3: 1240.347 us/op
+Iteration   4: 1233.985 us/op
+Iteration   5: 1245.714 us/op
+Iteration   6: 1255.207 us/op
+Iteration   7: 1238.014 us/op
+Iteration   8: 1255.793 us/op
+Iteration   9: 1223.632 us/op
+Iteration  10: 1245.067 us/op
+
+
+Result "testRotationCodingV3":
+  1209.008 ±(99.9%) 20.008 us/op [Average]
+  (min, avg, max) = (1157.588, 1209.008, 1255.793), stdev = 29.947
+  CI (99.9%): [1189.000, 1229.015] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:04:05
+
+Benchmark                                                          Mode  Cnt     Score    Error  Units
+RotationCoding.RotationCodingBenchmark.testRotationCodingOriginal  avgt   30  1499.931 ± 22.896  us/op
+RotationCoding.RotationCodingBenchmark.testRotationCodingV1        avgt   30  1353.041 ± 10.828  us/op
+RotationCoding.RotationCodingBenchmark.testRotationCodingV2        avgt   30  1505.056 ± 30.575  us/op
+RotationCoding.RotationCodingBenchmark.testRotationCodingV3        avgt   30  1209.008 ± 20.008  us/op
